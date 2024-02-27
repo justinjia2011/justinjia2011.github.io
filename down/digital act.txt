@@ -18,8 +18,7 @@ reg query "HKLM\SYSTEM\CurrentControlSet\Control\ProductOptions" /v OSProductPfn
 
 注1：上述步骤如果嫌麻烦，也不用着急，批处理我做好了，以管理员身份运行即可在同目录下生成数字门票。gatherosstate.exe下载：
 justinjia2011.github.io/down/gatherosstate.exe
-
-
+justinjia2011.github.io/down/digital act.bat
 
 2.安装数字门票、激活。
 
