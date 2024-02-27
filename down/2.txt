@@ -1,0 +1,44 @@
+「数字激活-操作方法」
+
+1.制作数字门票。下载gatherosstate.exe（非原版，已改造）,带参数运行它，生成门票GenuineTicket.xml。
+
+先看一下原先的方法：
+
+gatherosstate.exe Pfn=xxxxxxx;DownlevelGenuineState=1
+
+再对比一下最新方法：
+
+gatherosstate.exe Pfn=xxxxxxx;PKeyIID=465145217131314304264339481117862266242033457260311819664735280
+
+上面Pfn的值是读取自注册表：
+
+reg query "HKLM\SYSTEM\CurrentControlSet\Control\ProductOptions" /v OSProductPfn
+
+看完是不是发现，就差了一个参数？对，你没看错，仅此而已。PkeyIID即为安装ID，可自行替换其他有效安装ID，比如第一节截图中的安装ID，我经过测试有效。
+
+注1：上述步骤如果嫌麻烦，也不用着急，批处理我做好了，以管理员身份运行即可在同目录下生成数字门票。gatherosstate.exe下载：
+justinjia2011.github.io/down/gatherosstate.exe
+
+
+
+2.安装数字门票、激活。
+
+后面的步骤和以前完全一样。将数字门票GenuineTicket.xml复制到以下目录：
+
+C:\ProgramData\Microsoft\Windows\ClipSVC\GenuineTicket\
+
+并以管理员身份运行命令，门票消失即安装成功：
+
+Powershell Restart-Service ClipSVC
+
+安装对应系统版本的通用密钥，例如Win10/11专业版：
+
+slmgr -ipk VK7JG-NPHTM-C97JM-9MPGT-3V66T
+
+以管理员身份执行激活命令（需联网）：
+
+slmgr -ato
+
+
+
+大功告成！
