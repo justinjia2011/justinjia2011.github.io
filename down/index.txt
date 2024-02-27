@@ -1,7 +1,7 @@
 SppExtComObjHook64.dll
 [MS-DOS.7.10完整安装光盘ISO版].DOS71CD.iso
 1.mp3
-2.txt
+digital act.txt
 gatherosstate.exe
 04d9f488b4f25108569f1773aa8e571d1d9599d79885342686b75999dc5ea5ce.jpg
 12136708ef8e7d1cd486f36eec4b080614f8ef60d1380e429c8cc1b5d877017e.jpg
