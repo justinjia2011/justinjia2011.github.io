@@ -1,3 +1,7 @@
+weight:300;cursor:url(../images/cursor.cur),default;overflow-x:hidden;margin:0}
+a{color:#51aded;text-decoration:none;-webkit-transition:.5s;transition:.5s}
+a:hover{outline:0;;text-decoration:none;cursor:url(../images/pointer.cur),auto;color:#51aded!important}
+a:focus{outline:0;text-decoration:none}
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
