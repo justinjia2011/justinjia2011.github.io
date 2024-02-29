@@ -6,6 +6,7 @@
   position: fixed;
   height: 100%;
   overflow: auto;
+  backdrop-filter: blur(5px);
 }
 
 .sidebar a {
@@ -13,22 +14,26 @@
   color: black;
   padding: 16px;
   text-decoration: none;
+    backdrop-filter: blur(5px);
 }
  
 .sidebar a.active {
   background-color: #4CAF50;
   color: white;
+   backdrop-filter: blur(5px);
 }
 
 .sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
+   backdrop-filter: blur(5px);
 }
 
 div.content {
   margin-left: 200px;
   padding: 1px 16px;
   height: 1000px;
+   backdrop-filter: blur(5px);
 }
 
 @media screen and (max-width: 700px) {
@@ -36,14 +41,17 @@ div.content {
     width: 100%;
     height: auto;
     position: relative;
+     backdrop-filter: blur(5px);
   }
   .sidebar a {float: right;}
   div.content {margin-left: 0;}
+   backdrop-filter: blur(5px);
 }
 
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: right;
+     backdrop-filter: blur(5px);
   }
 }
